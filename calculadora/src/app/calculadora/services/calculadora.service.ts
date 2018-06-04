@@ -5,6 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class CalculadoraService {
 
+	/*
+	constantes utilizadas para identificar as operações
+	de calculo
+	*/
 	static readonly SOMA: string = '+';
 	static readonly SUBTRACAO: string = '-';
 	static readonly DIVISAO: string = '/';
@@ -12,6 +16,14 @@ export class CalculadoraService {
 
 	constructor() { }
 
+	/**
+	*metodo que calcula uma operação matematica dado dois numeros.
+	*suporta operacoes de soma, subtração, divisão e multiplicação
+	*@param num1 number
+	*@param num2 number
+	*@param operacao string, operação a ser executada
+	*@return number - resultado da operacao
+	*/
 	calcular(num1:number, num2:number, operacao: string): number {
 		let resultado: number;
 
@@ -31,5 +43,6 @@ export class CalculadoraService {
 			default:
 				resultado = 0;
 		}
+		return resultado;
 	}
 }
