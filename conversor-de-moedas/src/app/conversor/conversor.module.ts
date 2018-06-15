@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
 import { NumeroDirective } from './directives';
+import { ModalCotacaoComponent } from './utils';
 
 @NgModule({
   imports: [
@@ -14,7 +15,7 @@ import { NumeroDirective } from './directives';
     HttpModule,
     FormsModule
   ],
-  declarations: [ConversorComponent, NumeroDirective],
+  declarations: [ConversorComponent, NumeroDirective, ModalCotacaoComponent],
   exports: [
   	ConversorComponent
   ],
