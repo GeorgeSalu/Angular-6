@@ -4,10 +4,13 @@ import { ConversorComponent } from './components';
 import { MoedaService, ConversorService } from './services';
 import { HttpModule } from '@angular/http';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   imports: [
     CommonModule,
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
   declarations: [ConversorComponent],
   exports: [
