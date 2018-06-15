@@ -6,13 +6,15 @@ import { HttpModule } from '@angular/http';
 
 import { FormsModule } from '@angular/forms';
 
+import { NumeroDirective } from './directives';
+
 @NgModule({
   imports: [
     CommonModule,
     HttpModule,
     FormsModule
   ],
-  declarations: [ConversorComponent],
+  declarations: [ConversorComponent, NumeroDirective],
   exports: [
   	ConversorComponent
   ],
