@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 
 import { NumeroDirective } from './directives';
 import { ModalCotacaoComponent } from './utils';
+import { DataBrPipe } from './pipes/data-br.pipe';
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import { ModalCotacaoComponent } from './utils';
     HttpModule,
     FormsModule
   ],
-  declarations: [ConversorComponent, NumeroDirective, ModalCotacaoComponent],
+  declarations: [ConversorComponent, NumeroDirective, ModalCotacaoComponent, DataBrPipe],
   exports: [
   	ConversorComponent
   ],
