@@ -1,2 +1,5 @@
-<ap-photo url="http://pt.kabbalah.com/sites/dev02.kce.kabbalahcentres.com/files/14-07-18-leo-a-double-edged-sword.jpg" description="Leao"></ap-photo>
-<ap-photo url="http://pt.kabbalah.com/sites/dev02.kce.kabbalahcentres.com/files/14-07-18-leo-a-double-edged-sword.jpg" description="Leao"></ap-photo>
+<ap-photo
+      *ngFor="let photo of photos"
+      [url]="photo.url"
+      [description]="photo.description">
+</ap-photo>
