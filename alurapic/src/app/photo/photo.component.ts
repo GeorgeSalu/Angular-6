@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
 	selector: 'ap-photo',
@@ -6,8 +6,8 @@ import { Component } from "@angular/core";
 })
 export class PhotoComponent {
 
-    title = 'Leao';
+    @Input() description = '';
 
-    url = 'http://pt.kabbalah.com/sites/dev02.kce.kabbalahcentres.com/files/14-07-18-leo-a-double-edged-sword.jpg'
+    @Input() url = ''
 
 }
