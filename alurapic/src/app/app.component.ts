@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-	title = 'Leao';
-
-	url = 'http://pt.kabbalah.com/sites/dev02.kce.kabbalahcentres.com/files/14-07-18-leo-a-double-edged-sword.jpg'
 
 }
