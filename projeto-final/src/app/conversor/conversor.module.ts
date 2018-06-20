@@ -10,13 +10,18 @@ import { NumeroDirective } from './directives';
 import { ModalCotacaoComponent } from './utils';
 import { DataBrPipe } from './pipes/data-br.pipe';
 
+import { ConversorRoutingModule } from './conversor-routing.module';
+import { ConversorRoutingComponent } from './conversor-routing.component';
+
+
 @NgModule({
   imports: [
     CommonModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    ConversorRoutingModule
   ],
-  declarations: [ConversorComponent, NumeroDirective, ModalCotacaoComponent, DataBrPipe],
+  declarations: [ConversorComponent, NumeroDirective, ModalCotacaoComponent, DataBrPipe, ConversorRoutingComponent],
   exports: [
   	ConversorComponent
   ],
