@@ -1,3 +1,4 @@
+import { DarkenOnHoverModule } from './../../shared/directive/darken-on-hover/darken-on-hover.module';
 import { SearchComponent } from './search/search.componet';
 import { CardModule } from './../../shared/components/card/card.module';
 import { PhotoModule } from './../photo/photo.module';
@@ -16,6 +17,6 @@ import { PhotosComponent } from './photos/photos.component';
     FilterByDescription,
     SearchComponent
   ],
-  imports: [CommonModule, PhotoModule, CardModule]
+  imports: [CommonModule, PhotoModule, CardModule, DarkenOnHoverModule]
 })
 export class PhotoListModule {}
