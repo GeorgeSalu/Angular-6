@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material';
 
-import { LoginModule, LoginRoutingModule, CadastroPjModule, CadastroPjRoutingModule } from './autenticacao';
+import { LoginModule, LoginRoutingModule, CadastroPjModule, CadastroPjRoutingModule, CadastroPfModule } from './autenticacao';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -21,6 +21,7 @@ import { AppRoutingModule } from './app-routing.module';
     LoginRoutingModule,
     CadastroPjModule,
     CadastroPjRoutingModule,
+    CadastroPfModule,
     AppRoutingModule
   ],
   providers: [],
