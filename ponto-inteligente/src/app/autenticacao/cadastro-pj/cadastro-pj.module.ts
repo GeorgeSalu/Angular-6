@@ -7,6 +7,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+import { CadastrarPjService } from './services';
+
 import {
   MatInputModule,
   MatButtonModule,
@@ -35,6 +37,9 @@ import {
     MatSnackBarModule,
     SharedModule
   ],
-  declarations: [CadastrarPjComponent, CadastroPjComponent]
+  declarations: [CadastrarPjComponent, CadastroPjComponent],
+  providers: [
+    CadastrarPjService
+  ]
 })
 export class CadastroPjModule { }
