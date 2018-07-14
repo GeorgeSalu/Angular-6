@@ -1,8 +1,8 @@
-# repositorio com projetos escritos em angular 6, para explorar o framework
+## repositorio com projetos escritos em angular 6, para explorar o framework
 
 ##  Formação Angular 2, 4 e 6 - O início criando 7 projetos 
 
-- https://www.udemy.com/formacao-angular-inicio-criando-7-projetos/
+   - https://www.udemy.com/formacao-angular-inicio-criando-7-projetos/
 repositorio com projetos escritos em angular 6, para explorar o framework
 Esse curso tem como objetivo principal ensinar a criação de aplicações web com o poderoso framework Angular 2, 4 e 6.
 
@@ -27,7 +27,7 @@ O curso foi dividido em 7 projetos, com o objetivo de tornar o aprendizado otimi
 
 ##  Curso de Angular 2 e 6 Avançado 
 
--https://www.udemy.com/curso-de-angular-2-5-avancado/
+   - https://www.udemy.com/curso-de-angular-2-5-avancado/
 Esse curso tem como objetivo principal ensinar a criação de aplicações avançadas web com o poderoso framework Angular 2 e 6.
 
 Para tornar o aprendizado prático e divertido, você criará um projeto 100% prático ao longo do curso, onde serão ensinados passo a passo recursos avançados do Angular 2 e 6!
