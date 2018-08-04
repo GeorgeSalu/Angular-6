@@ -6,12 +6,17 @@ import { PhotoListComponent } from './photos/photo-list/photo-list.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PhotoListResolver } from './photos/photo-list/photo-list.resolver';
+import { SingUpComponent } from './home/singup/singup.component';
 
 const routes:Routes  = [
   {
     path: '',
     component: SignInComponent,
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'singup',
+    component: SingUpComponent
   },
   {
     path: 'user/:userName',
