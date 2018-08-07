@@ -6,7 +6,8 @@ import { NewUser } from './new-user';
 import { SignUpService } from './signup.service';
 
 @Component({
-  templateUrl: './singup.component.html'
+  templateUrl: './singup.component.html',
+  providers: [UserNotTakenValidatorService]
 })
 export class SingUpComponent implements OnInit{
 

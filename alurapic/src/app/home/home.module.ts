@@ -1,3 +1,4 @@
+import { SignUpService } from './singup/signup.service';
 import { HomeRoutingModule } from './home.routing.module';
 import { SingUpComponent } from './singup/singup.component';
 import { RouterModule } from '@angular/router';
@@ -10,6 +11,9 @@ import { HomeComponent } from './home.component';
 
 @NgModule({
   declarations: [ SignInComponent, SingUpComponent, HomeComponent ],
-  imports: [ReactiveFormsModule, FormsModule ,CommonModule, VMessageModule, RouterModule, HomeRoutingModule]
+  imports: [ReactiveFormsModule, FormsModule ,CommonModule, VMessageModule, RouterModule, HomeRoutingModule],
+  providers: [
+    SignUpService
+  ]
 })
 export class HomeModule {}
