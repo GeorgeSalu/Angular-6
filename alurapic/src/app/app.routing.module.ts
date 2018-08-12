@@ -30,6 +30,10 @@ const routes:Routes  = [
     canActivate: [AuthGuard]
   },
   {
+    path: 'p/1',
+    component: PhotoFormComponent
+  },
+  {
     path: '**',
     component: NotFoundComponent
   }
