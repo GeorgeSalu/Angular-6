@@ -5,6 +5,7 @@ import { PhotoListComponent } from './photos/photo-list/photo-list.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PhotoListResolver } from './photos/photo-list/photo-list.resolver';
+import { PhotoDetailsComponent } from './photos/photo-details/photo-details.component';
 
 const routes:Routes  = [
   {
@@ -30,8 +31,8 @@ const routes:Routes  = [
     canActivate: [AuthGuard]
   },
   {
-    path: 'p/1',
-    component: PhotoFormComponent
+    path: 'p/:photoId',
+    component: PhotoDetailsComponent
   },
   {
     path: '**',
