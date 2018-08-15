@@ -11,7 +11,6 @@ import { PhotoComment } from '../photo/photo-comment';
 export class PhotoDetailsComponent implements OnInit {
 
   photo$: Observable<Photo>;
-  comments$: Observable<PhotoComment[]>;
 
   constructor(private route: ActivatedRoute, private photoService: PhotoService) { }
 
@@ -19,7 +18,6 @@ export class PhotoDetailsComponent implements OnInit {
   ngOnInit(): void {
     const id = this.route.snapshot.params.photoId;
     this.photo$ = this.photoService.findById(id );
-    this.comments$ = this.photoService.getComment(id);
   }
 
 }
