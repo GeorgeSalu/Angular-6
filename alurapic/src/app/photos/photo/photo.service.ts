@@ -33,7 +33,7 @@ export class PhotoService {
     return this.http.post(  API + '/photos/upload', formData );
   }
 
-  findById(id: string) {
+  findById(id: number) {
     return this.http.get<Photo>(
         API + '/photos/' + id
     );
@@ -45,6 +45,10 @@ export class PhotoService {
 
   addComment(photoId: number, commentText: string) {
     return this.http.post(API + '/photos/'+photoId+'/comments', { commentText });
+  }
+
+  removePhoto(photoId: number) {
+    return this.http.delete(API + '/photo/'+photoId);
   }
 
 }
